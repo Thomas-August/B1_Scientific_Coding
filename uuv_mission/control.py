@@ -12,6 +12,7 @@ class PDController:
       u[t] = KP * e[t] + KD * (e[t] - e[t-1]).
     - The controller stores the previous error (e_prev) as internal state and
       provides a reset() method to clear it between runs.
+    - The default gains are KP=0.15 and KD=0.6.
     """
 
     KP: float = 0.15
